@@ -4,24 +4,31 @@ public class MyMain {
     // If the char is not an uppercase letter, 
     // it is returned unchanged. 
     public static char toLower(char ch) {
-        // REPLACE WITH YOUR CODE
-        return '!';
+        char x = Character.toLowerCase(ch);
+        return x;
     }
 
-    // Changes a lowercase letter to an uppercase letter
-    // If the char is not a lowercase letter,
-    // it is returned unchanged.
+
     public static char toUpper(char ch) {
-        // REPLACE WITH YOUR CODE HERE
-        return '!';
+        char x = Character.toUpperCase(ch);
+        return x;
     }
 
-    // The method is given a String as input and returns a
-    // new String where all of the numbers have been removed
-    // from the original String.
+
     public static String removeNumbers(String str) {
-        // REPLACE WITH YOUR CODE
-        return "!!!";
+        String empty_string = "";
+
+        for (int i = 0; i < str.length(); i++){
+            char x = str.charAt(i);
+            if (x >= 48 && x<=57){
+                continue;
+            }
+            else{
+                empty_string += x;
+            }
+        }
+        return empty_string;
+        
     }
 
     // Write some code to test your methods!
